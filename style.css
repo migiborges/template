@@ -1,0 +1,130 @@
+/* hau nia css mak ida ne'e */
+
+body {
+     background-image: url("b.png");
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     line-height: 28px;
+     color: #333;
+
+}
+
+.container {
+     width: 960px;
+     margin: auto;
+     background-color: white;
+}
+
+.header {
+     padding: 20px;
+}
+
+.header .judul {
+     font-size: 30px;
+     text-align: center;
+
+
+}
+
+.header ul li {
+     display: inline-block;
+     margin-top: 20px;
+     margin-right: 10px;
+
+
+}
+
+.header a {
+     text-decoration: none;
+     color: salmon;
+     padding: 3px;
+}
+
+
+.header a:hover {
+     color: white;
+     background-color: lightskyblue;
+}
+
+.banner {
+     height: 300px;
+     background-image: url(banner.jpg);
+     background-size: cover;
+     background-position: 0 -210px;
+     border-top: 5px solid salmon;
+     border-bottom: 5px solid lightskyblue;
+     margin-top: -30px;
+}
+
+.main {
+     padding: 20px;
+     width: 600px;
+     /* uza box-sizing atu nune  atur paddin no margin labele muda an */
+     box-sizing: border-box;
+     float: left;
+
+}
+
+.main h2 {
+     font-size: 25px;
+     font-weight: bold;
+     margin-top: -10px;
+}
+
+.main .hakerek {
+     font-size: 12px;
+     margin-top: -5px;
+
+}
+
+.main p {
+     margin-top: 20px;
+     text-align: justify;
+     font-size: 15px;
+}
+
+.sidebar {
+     width: 300px;
+     float: right;
+     padding-top: 20px;
+     padding-right: 30px;
+     box-sizing: border-box;
+     text-align: justify;
+}
+
+.sidebar img {
+     float: left;
+     width: 100px;
+     padding-right: 10px;
+}
+
+.footer {
+     background-color: lightslategray;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-align: center;
+}
+
+
+
+
+
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ 
+clear-fix*/
+cf:before,
+.cf:after {
+     content: " ";
+     /* 1 */
+     display: table;
+     /* 2 */
+}
+
+.cf:after {
+     clear: both;
+}
+
+
+.cf {
+     *zoom: 1;
+}
